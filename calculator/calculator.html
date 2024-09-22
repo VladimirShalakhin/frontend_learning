@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>        
+        <select name="operation" id="operation-select">
+            <option value="">Выбрать действие</option>
+            <option value="+">+</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+            <option value="-">-</option>
+            <option value="negation">negation</option>
+            <option value="stringAddition">stringAddition</option>
+            <option value="arraysAddition">arraysAddition</option>
+        </select>
+        <div id="box">Operation chosen</div>
+        <div id="numbersActions">
+            <input id="value1" type="number" step="any" />
+            <input id="value2" type="number" step="any" />
+        </div>
+        <div id="numbersNegation">
+            <input type="text" id="value3" />
+            <input id="value4" type="number" step="any" />
+        </div>
+        <div id="stringsAddition">
+            <input type="text" id="value5" />
+            <input type="text" id="value6" />
+        </div>
+        <div id="arraysAddition">
+            <input type="text" id="value7" />
+            <input type="text" id="value8" />
+        </div>
+        <button type="button" id="calculator">Получить результат</button>
+        <output type="text" id="result"></output>
+        <script src="js/script.js"></script>
+    </body>
+</html>
